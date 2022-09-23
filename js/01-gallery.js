@@ -1,8 +1,9 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
+
 const galleryContainer = document.querySelector('div.gallery');
-galleryContainer.insertAdjacentHTML("beforeend", createGalleryCard(galleryItems));
+galleryContainer.insertAdjacentHTML("afterbegin", createGalleryCard(galleryItems));
 
 function createGalleryCard(obj = {}) {
     let galleryCards = '';
